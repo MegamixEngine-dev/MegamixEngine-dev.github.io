@@ -1,0 +1,58 @@
+<html><title>objSingleTilesetAnimation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../assets/styles/default.css" type="text/css">
+<body><div class="page">
+<h1>objSingleTilesetAnimation</h1>
+objects <b>/</b> Level Objects <b>/</b> Aesthetic <b>/</b> objSingleTilesetAnimation<br/><a href="prtAlwaysActive.html">prtAlwaysActive</a> <b>&gt;</b> <a href="objSingleTilesetAnimation.html">objSingleTilesetAnimation</a>
+<h2> Description </h2>
+<p><p>Used to animate tilesets in one background file, it animates horizontal and vertical strips</p>
+
+<p>from left to right and from top to bottom.</p>
+
+<p></p>
+
+<p>This object can have more than one animation but the tiles must be in the same layer</p>
+
+<p></p>
+
+<p>An object setter is required for animating chunks of tiles(you don't have to set any object if you</p>
+
+<p>don't want to, just put one in the tileset so its tiles are splited).</p>
+
+<p></p>
+
+<p>How to use</p>
+
+<p></p>
+
+<p>Set animLayer to the layer where the animated tiles are, then set the region of the first frame in the animation</p>
+
+<p>(relative to the background), and animLengths to the number of frames of each animation</p>
+
+<p>Set animType to 0 if the frames are aligned vertically(with the first frame on the top)</p>
+
+<p>or set it to 1 if the frames are aligned horizontally(with the first frame on the left)</p>
+
+<p></p>
+
+<p>The following arrays must have the same size and be set in creation code</p></p>
+<h2> Variables </h2>
+<table class=centre><tr><th>Name</th><th>Value</th><th>Description</th></tr><tr><td><span class="cc">animLayer</span></td><td>1000000</td><td><p> sets the layer of the animations, this object will only replace the tiles in this layer</p></td></tr>
+<tr><td><span class="cc">animLayerOffset</span></td><td>0</td><td><p> increase this number if two objSingleTilesetAnimation are conflicting</p></td></tr>
+<tr><td><span class="cc">animateOnTransition</span></td><td>true</td><td><p></p></td></tr>
+<tr><td><span class="cc">stopOnFlash</span></td><td>false</td><td><p></p></td></tr>
+<tr><td><span class="cc">deleteOriginals</span></td><td>false</td><td><p> this object makes the tiles for the animation over the originals</p>
+
+<p>if for whatever reason you don't want the original non animated tiles set this to true</p></td></tr>
+<tr><td>init</td><td>0</td><td><p>Internal use only</p></td></tr>
+</table>
+<p><i>variable names in <span class="cc">bold</span> are safe to set in creation code.<i></p><h2> Inherited from prtAlwaysActive </h2>
+<table class=centre><tr><th>Name</th><th>Value</th><th>Description</th></tr><tr><td>frozen</td><td>0</td><td></td></tr>
+</table>
+
+</body></div></html>

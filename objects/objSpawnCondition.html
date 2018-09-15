@@ -1,0 +1,35 @@
+<html><title>objSpawnCondition</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../assets/styles/default.css" type="text/css">
+<body><div class="page">
+<h1>objSpawnCondition</h1>
+objects <b>/</b> Level Objects <b>/</b> objSpawnCondition<br/><i>This object has no parent.</i>
+<h2> Description </h2>
+<p></p>
+<h2> Variables </h2>
+<table class=centre><tr><th>Name</th><th>Value</th><th>Description</th></tr><tr><td><span class="cc">despawnType</span></td><td>0</td><td><p> if 0 beenOutsideView will be false if the object is not allowed to spawn</p>
+
+<p> if 1 beenOutiseView will be true if the object is not allowed to spawn</p></td></tr>
+<tr><td><span class="cc">faction</span></td><td>-1</td><td><p> if different from -1 it will only affect entities with that faction</p>
+
+<p> otherwise everything but players and player projectiles would be affected</p></td></tr>
+<tr><td><span class="cc">playerXDistance</span></td><td>80</td><td><p> spawn if the player is closer than this distance on x. -1: doesn't matter. Measured from center.</p></td></tr>
+<tr><td><span class="cc">playerYDistance</span></td><td>-1</td><td><p> spawn if the player is closer than this distance on y. -1: doesn't matter. Measured from center.</p></td></tr>
+<tr><td><span class="cc">conditionCode</span></td><td>""</td><td><p> if this is non-empty, the above check will not take place and instead this</p>
+
+<p>code will be string_execute'd. It must set the local variable allowSpawn.</p></td></tr>
+<tr><td><span class="cc">conditionScript</span></td><td>scrNoEffect</td><td><p> if this script is set in creation code, all above conditions will be ignored</p>
+
+<p>and this script will run. The script should set allowSpawn.</p></td></tr>
+<tr><td><span class="cc">conditionScriptArgC</span></td><td>0</td><td><p> number of arguments</p></td></tr>
+<tr><td><span class="cc">conditionScriptArgV</span></td><td>makeArray(0)</td><td><p> array containing arguments (will be cropped to `conditionScriptArgC`)</p></td></tr>
+<tr><td><span class="cc">spawnConditionNegate</span></td><td>false</td><td><p> negate the spawn condition?</p></td></tr>
+<tr><td>allowSpawn</td><td>true</td><td><p>currently allowing spawn? (not for creation code)</p></td></tr>
+</table>
+<p><i>variable names in <span class="cc">bold</span> are safe to set in creation code.<i></p>
+</body></div></html>
